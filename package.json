@@ -21,11 +21,11 @@
   },
   "scripts": {
     "dev": "run-p no-cms-watch start",
-    "build": "node no-cms generate",
-    "no-cms-watch": "node no-cms generate -w",
-    "no-cms": "node no-cms generate",
+    "build": "node no-cms/no-cms.js generate",
+    "no-cms-watch": "node no-cms/no-cms.js generate -w",
+    "no-cms": "node no-cms/no-cms.js generate",
     "heroku-postbuild": "npm run build && node -v",
-    "clean": "rimraf dist/ db-cms.json",
+    "clean": "rimraf dist/ no-cms/db.json",
     "start": "node -v && node server.js"
   },
   "private": true

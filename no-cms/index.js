@@ -21,7 +21,7 @@ const pagesDir = './pages'
 const dataDir = './data'
 const layoutsDir = './layouts'
 const outputDir = './dist/html'
-const dbFile = './no-cms-db.json'
+const dbFile = './no-cms/db.json'
 const masterLayoutFile = './layouts/_master.ejs'
 const masterLayoutTemplate = fs.readFileSync(masterLayoutFile, 'utf-8')
 

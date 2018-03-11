@@ -1,6 +1,6 @@
 .DS_Store
 Thumbs.db
-no-cms-db.json
+db.json
 *.log
 node_modules/
 dist/

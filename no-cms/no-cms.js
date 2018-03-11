@@ -1,4 +1,4 @@
-const noCMS = require('./no-cms/index.js')
+const noCMS = require('./index.js')
 
 if (process.argv.length < 3) {
   console.log(`
