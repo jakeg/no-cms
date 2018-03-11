@@ -1,0 +1,37 @@
+body {
+  font-family: arial, sans-serif;
+}
+article {
+  margin: 50px;
+  padding: 50px;
+  background: #eee;
+}
+h1 {
+  text-align: center;
+  color: blue;
+  padding: 10px;
+  background: pink;
+}
+h2 {
+  border-bottom: 2px red solid;
+}
+.top-nav li {
+  display: inline-block;
+}
+.top-nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background: black;
+  border: 1px black solid;
+}
+
+.top-nav li a:hover {
+  background: white;
+  color: black;
+}
+.read-time {
+  text-align: right;
+  font-weight: bold;
+}

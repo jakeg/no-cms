@@ -1,0 +1,32 @@
+{
+  "name": "no-cms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engines": {
+    "node": "8.9.*"
+  },
+  "dependencies": {
+    "chokidar": "^2.0.0",
+    "compression": "^1.7.1",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "glob": "^7.1.2",
+    "js-yaml": "^3.10.0",
+    "marked": "^0.3.12",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.20.1",
+    "npm-run-all": "^4.1.2",
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "dev": "run-p no-cms-watch start",
+    "build": "node no-cms generate",
+    "no-cms-watch": "node no-cms generate -w",
+    "no-cms": "node no-cms generate",
+    "heroku-postbuild": "npm run build && node -v",
+    "clean": "rimraf dist/ db-cms.json",
+    "start": "node -v && node server.js"
+  },
+  "private": true
+}
