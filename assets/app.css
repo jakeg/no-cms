@@ -35,3 +35,16 @@ h2 {
   text-align: right;
   font-weight: bold;
 }
+.prominent {
+  padding: 20px;
+  background: green;
+  color: white;
+}
+.footer {
+  text-align: center;
+  color: #aaa;
+}
+.footer a {
+  color: #666;
+  text-decoration: none;
+}
