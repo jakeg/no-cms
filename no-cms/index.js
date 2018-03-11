@@ -311,11 +311,7 @@ function render (page, singlePage = true, forceRender = false) {
 function extractPage (page) {
   let markdown = fs.readFileSync(path.join(pagesDir, page), 'utf8')
   const mdHash = md5(markdown) // we compare this before saving renders to disk
-  if (!markdown) {
-    console.log(`Trying to render ${page} but it does not exist or is empty`)
-    return false
-  }
-  let [variables] = markdown.match(/---(.|\n|\r)*?---/)
+  let [variables] = markdown.match(/---(.|\n|\r)*?---/) || ['layout: page']
   markdown = markdown.replace(/---(.|\n|\r)*?---/, '')
   variables = variables.replace(/---/g, '').trim()
   variables = yaml.safeLoad(variables)
