@@ -1,11 +1,11 @@
+// 'tags' are available in our .md files, e.g. {% youtube sdfi34343 %}
+
 const { tagRegister } = require('../no-cms/tags.js')
 
 tagRegister('youtube', (args) => {
   const youtubeId = args[0] || ''
-  const width = args[1] || '560'
-  const height = args[2] || '315'
   return `
-    <iframe class="youtube-video" width="${width}" height="${height}" src="https://www.youtube.com/embed/${youtubeId}?rel=0" frameborder="0" allowfullscreen=""></iframe>
+    <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/${youtubeId}?rel=0" frameborder="0" allowfullscreen=""></iframe>
   `
 })
 
