@@ -16,6 +16,13 @@ npm run build && npm start
 npm run clean
 ```
 
+## Things it uses
+
+- [EJS](http://ejs.co/) for layouts
+- [Marked](https://github.com/markedjs/marked) for Markdown to HTML conversion for pages
+- [ExpressJS](http://expressjs.com/) for a very simple server
+- [JS-YAML](https://github.com/nodeca/js-yaml) to parse YAML into JS
+
 ## How does it work
 
 ### Pages (`/pages`)
@@ -112,3 +119,11 @@ To add some content within a `div.prominent`:
 ```
 
 ... this saves you from having to have HTML in your `.md` page files (but you still can if you want).
+
+## Ideas for improvements and how to customise
+
+- Can't imagine it being too hard to change from eg using EJS to using server-side Vue/React (even isomorphic rendering) or other alternatives instead.
+
+- Just hack away at the files - there's less than 500 lines of JS in total.
+
+- Make `npm run dev` cleverer in terms of when to rebuild watched files.
